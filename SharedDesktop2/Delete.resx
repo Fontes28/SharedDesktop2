@@ -121,7 +121,35 @@
   <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 52</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>RA:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>siticoneGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnExcluirAluno.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
@@ -131,7 +159,6 @@
   <data name="btnExcluirAluno.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 45</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnExcluirAluno.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -148,7 +175,7 @@
     <value>siticoneGroupBox1</value>
   </data>
   <data name="&gt;&gt;btnExcluirAluno.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="Nome.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -181,7 +208,7 @@
     <value>siticoneGroupBox1</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtExcluir.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 81</value>
@@ -202,7 +229,7 @@
     <value>siticoneGroupBox1</value>
   </data>
   <data name="&gt;&gt;txtExcluir.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="siticoneGroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -261,6 +288,33 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 63</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>RA: </value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>siticoneGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="NomeMonitor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -292,7 +346,7 @@
     <value>siticoneGroupBox2</value>
   </data>
   <data name="&gt;&gt;dataGridViewMonitor.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnExcluirMonitor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -319,7 +373,7 @@
     <value>siticoneGroupBox2</value>
   </data>
   <data name="&gt;&gt;btnExcluirMonitor.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtExcluirMonitor.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 81</value>
@@ -340,7 +394,7 @@
     <value>siticoneGroupBox2</value>
   </data>
   <data name="&gt;&gt;txtExcluirMonitor.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="siticoneGroupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -399,6 +453,33 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 63</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>NR:</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>siticoneGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="NomeProfessor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -430,7 +511,7 @@
     <value>siticoneGroupBox3</value>
   </data>
   <data name="&gt;&gt;dataGridViewProfessor.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnExcluirProfessor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -457,7 +538,7 @@
     <value>siticoneGroupBox3</value>
   </data>
   <data name="&gt;&gt;btnExcluirProfessor.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtExcluirProfessor.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 81</value>
@@ -478,7 +559,7 @@
     <value>siticoneGroupBox3</value>
   </data>
   <data name="&gt;&gt;txtExcluirProfessor.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="siticoneGroupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -534,6 +615,33 @@
   <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 63</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>NR: </value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>siticoneGroupBox4</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="NomeDir.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -565,7 +673,7 @@
     <value>siticoneGroupBox4</value>
   </data>
   <data name="&gt;&gt;dataGridViewDir.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnExcluirDir.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -592,7 +700,7 @@
     <value>siticoneGroupBox4</value>
   </data>
   <data name="&gt;&gt;btnExcluirDir.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtExcluirDir.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 81</value>
@@ -613,7 +721,7 @@
     <value>siticoneGroupBox4</value>
   </data>
   <data name="&gt;&gt;txtExcluirDir.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="siticoneGroupBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -669,6 +777,33 @@
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 63</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>NR: </value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>siticoneGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="NomeAdm.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -700,7 +835,7 @@
     <value>siticoneGroupBox5</value>
   </data>
   <data name="&gt;&gt;dataGridViewAdm.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnExcluirAdm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -727,7 +862,7 @@
     <value>siticoneGroupBox5</value>
   </data>
   <data name="&gt;&gt;btnExcluirAdm.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtExcluirAdm.Location" type="System.Drawing.Point, System.Drawing">
     <value>59, 81</value>
@@ -748,7 +883,7 @@
     <value>siticoneGroupBox5</value>
   </data>
   <data name="&gt;&gt;txtExcluirAdm.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="siticoneGroupBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1112,6 +1247,9 @@
         IBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgE
         AoFAIBAIDcf/Aff7ZtvTVKLCAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Update</value>

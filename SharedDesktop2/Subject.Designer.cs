@@ -38,7 +38,7 @@ namespace SharedDesktop2
             this.siticoneRoundedComboBox1 = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.siticoneMaterialTextBox2 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.siticoneRoundedTextBox1 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.siticoneRoundedButton1 = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.btnCadastrarDisciplina = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.siticoneGroupBox1.SuspendLayout();
@@ -91,7 +91,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox1
             // 
-            this.siticoneGroupBox1.Controls.Add(this.siticoneRoundedButton1);
+            this.siticoneGroupBox1.Controls.Add(this.btnCadastrarDisciplina);
             this.siticoneGroupBox1.Controls.Add(this.siticoneRoundedTextBox1);
             this.siticoneGroupBox1.Controls.Add(this.siticoneMaterialTextBox2);
             this.siticoneGroupBox1.Controls.Add(this.siticoneRoundedComboBox1);
@@ -173,19 +173,19 @@ namespace SharedDesktop2
             this.siticoneRoundedTextBox1.Size = new System.Drawing.Size(200, 36);
             this.siticoneRoundedTextBox1.TabIndex = 3;
             // 
-            // siticoneRoundedButton1
+            // btnCadastrarDisciplina
             // 
-            this.siticoneRoundedButton1.CheckedState.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.CustomImages.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneRoundedButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneRoundedButton1.HoveredState.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.Location = new System.Drawing.Point(94, 332);
-            this.siticoneRoundedButton1.Name = "siticoneRoundedButton1";
-            this.siticoneRoundedButton1.ShadowDecoration.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.Size = new System.Drawing.Size(310, 45);
-            this.siticoneRoundedButton1.TabIndex = 4;
-            this.siticoneRoundedButton1.Text = "siticoneRoundedButton1";
+            this.btnCadastrarDisciplina.CheckedState.Parent = this.btnCadastrarDisciplina;
+            this.btnCadastrarDisciplina.CustomImages.Parent = this.btnCadastrarDisciplina;
+            this.btnCadastrarDisciplina.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCadastrarDisciplina.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrarDisciplina.HoveredState.Parent = this.btnCadastrarDisciplina;
+            this.btnCadastrarDisciplina.Location = new System.Drawing.Point(94, 332);
+            this.btnCadastrarDisciplina.Name = "btnCadastrarDisciplina";
+            this.btnCadastrarDisciplina.ShadowDecoration.Parent = this.btnCadastrarDisciplina;
+            this.btnCadastrarDisciplina.Size = new System.Drawing.Size(310, 45);
+            this.btnCadastrarDisciplina.TabIndex = 4;
+            this.btnCadastrarDisciplina.Text = "siticoneRoundedButton1";
             // 
             // Subject
             // 
@@ -210,7 +210,7 @@ namespace SharedDesktop2
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
-        private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton1;
+        private Siticone.UI.WinForms.SiticoneRoundedButton btnCadastrarDisciplina;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox1;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox2;
         private Siticone.UI.WinForms.SiticoneRoundedComboBox siticoneRoundedComboBox1;

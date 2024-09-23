@@ -13,7 +13,7 @@ namespace SharedDesktop2
     public partial class Home : Form
     {
         bool isOpen = false;
-        Add add = new Add();
+        
         Delete del = new Delete();
 
 
@@ -30,8 +30,9 @@ namespace SharedDesktop2
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            
-            if (!isOpen)
+            Add add = new Add(0);
+
+            if ((Application.OpenForms.OfType<Add>().Count() == 0) && (Application.OpenForms.OfType<Delete>().Count() == 0))
             {
                 add.MdiParent = this;
                 add.Show();
@@ -53,23 +54,43 @@ namespace SharedDesktop2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (!isOpen)
-            {
+          
                 
                 del.MdiParent = this;
                 del.Show();
                 isOpen = true;
-            }
-            else
-            {
-                del.Close();
-                isOpen = false;
-            }
+            
         }
 
         private void btnSubjects_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Add upd = new Add(1);
+
+            if ((Application.OpenForms.OfType<Add>().Count() == 0) && (Application.OpenForms.OfType<Delete>().Count() == 0))
+            {
+                upd.MdiParent = this;
+                upd.Show();
+                isOpen = true;
+            }
+            else
+            {
+                upd.Close();
+                isOpen = false;
+            }
+
+        }
+
+        private void btnShutdown_Click(object sender, EventArgs e)
+        {
+           
+            LoginForm lgn = new LoginForm();
+            lgn.Show();
+            this.Close();
         }
     }
 }

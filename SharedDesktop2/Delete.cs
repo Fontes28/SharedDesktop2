@@ -16,6 +16,7 @@ namespace SharedDesktop2
         public Delete()
         {
             InitializeComponent();
+            this.CenterToParent();
         }
 
         private void btnExcluirAluno_Click(object sender, EventArgs e)

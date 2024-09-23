@@ -78,6 +78,7 @@ namespace SharedDesktop2
             this.btnShutdown.ShadowDecoration.Parent = this.btnShutdown;
             this.btnShutdown.Size = new System.Drawing.Size(60, 60);
             this.btnShutdown.TabIndex = 8;
+            this.btnShutdown.Click += new System.EventHandler(this.btnShutdown_Click);
             // 
             // guna2Separator1
             // 
@@ -197,6 +198,7 @@ namespace SharedDesktop2
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
             this.btnUpdate.Size = new System.Drawing.Size(50, 50);
             this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Home
             // 

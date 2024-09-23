@@ -13,9 +13,49 @@ namespace SharedDesktop2
 {
     public partial class Add : Form
     {
+        int ident = -1;
         public Add()
         {
             InitializeComponent();
+
+        }
+        public Add(int i)
+        {
+            ident = i;
+            InitializeComponent();
+            this.CenterToParent();
+            if(i==0)
+            {
+                btnAtualizarAluno.Visible = false;
+                lblAttAluno.Visible = false;
+                switchAtivoAluno.Visible = false;
+                btnAtualizarMonitor.Visible = false;
+                lblAttMonitor.Visible = false;
+                switchAtualizarMonitor.Visible = false;
+                btnAtualizarProfessor.Visible = false;
+                lblAttProf.Visible = false;
+                switchAtualizarProfessor.Visible = false;
+                btnAtualizarDir.Visible = false;
+                lblAtualizarDir.Visible = false;
+                switchAtualizarDir.Visible = false;
+                btnAtualizarAdm.Visible = false;
+                lblAttAdm.Visible = false;
+                switchAtualizarAdm.Visible = false;
+            }
+            else if(i==1)
+            {
+                btnRegister.Visible = false;
+                btnCadastrarMonitor.Visible = false;
+                btnCadastrarProfessor.Visible = false;
+                btnCadastrarDir.Visible = false;
+                btnCadastrarAdm.Visible = false;
+                tabAluno.Text = "Atualizar Aluno";
+                tabMonitor.Text = "Atualizar Monitor";
+                tabProfessor.Text = "Aatualizar Professor";
+                tabDiretor.Text = "Atualizar Diretor";
+                tabAdmin.Text = "Atualizar Administrador";
+                
+            }
 
         }
 
@@ -235,6 +275,123 @@ namespace SharedDesktop2
         private void Add_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void siticoneGroupBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAtualizarAluno_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void btnCadastrarAdm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrarProfessor_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtNrProfessor.Text == "")
+                {
+                    MessageBox.Show("Digite um NR!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    int nr = int.Parse(txtNrProfessor.Text);
+                    Professor prof = new Professor(txtNameProfessor.Text, txtRg.Text, cbxAreaProfessor.Text, txtTelProfessor.Text, txtEmail.Text, nr);
+                    if ((txtNrProfessor.Text == "") || (cbxAreaProfessor.Text == "") || (txtNameProfessor.Text == "") || (txtRg.Text == "") || (txtTelProfessor.Text == "") || (txtEmail.Text == ""))
+                    {
+                        MessageBox.Show("Preencha todos os campos!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        if (prof.cadastrarProfessor())
+                        {
+                            MessageBox.Show("Cadastro realizado com sucesso!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            txtNameProfessor.Text = "";
+                            txtRg.Text = "";
+                            txtTelProfessor.Text = "";
+                            txtEmail.Text = "";
+                            txtRg.Text = "";
+                            txtNrProfessor.Text = "";
+                            cbxAreaProfessor.Text = "";
+                            txtNameProfessor.Enabled = false;
+                            txtRg.Enabled = false;
+                            txtTelProfessor.Enabled = false;
+                            txtEmail.Enabled = false;
+                            txtRg.Enabled = false;
+                            cbxAreaProfessor.Enabled = false;
+                        }
+                        else
+                            MessageBox.Show("Erro no cadastro!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Preencha todos os campos!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void btnCadastrarDir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtNrDiretor.Text == "")
+                {
+                    MessageBox.Show("Digite um NR!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    int ra = int.Parse(txtNrDiretor.Text);
+                    Diretor diretor = new Diretor(txtNomeDiretor.Text, txtRgDir.Text, txtEmail.Text, cbxCargoDiretor.Text, txtTelDiretor.Text, ra);
+                    if ((txtNrDiretor.Text == "") || (cbxCargoDiretor.Text == "") || (txtNomeDiretor.Text == "") || (txtRgDir.Text == "") || (txtTelDiretor.Text == "") || (txtEmail.Text == "") || (txtSenhaDir.Text == ""))
+                    {
+                        MessageBox.Show("Preencha todos os campos!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        if (diretor.cadastrarDiretor())
+                        {
+                            int tipo = 2;
+                            DAO_Conexao.CadLogin(txtNomeDiretor.Text, txtSenhaDir.Text, tipo);
+                            MessageBox.Show("Cadastro realizado com sucesso!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            txtNomeDiretor.Text = "";
+                            txtRgDir.Text = "";
+                            cbxCargoDiretor.Text = "";
+                            txtTelDiretor.Text = "";
+                            txtEmail.Text = "";
+                            txtRgDir.Text = "";
+                            txtNrDiretor.Text = "";
+                            txtSenhaDir.Text = "";
+                            txtNomeDiretor.Enabled = false;
+                            txtRgDir.Enabled = false;
+                            cbxCargoDiretor.Enabled = false;
+                            txtTelDiretor.Enabled = false;
+                            txtEmail.Enabled = false;
+                            txtRgDir.Enabled = false;
+                            txtSenhaDir.Enabled = false;
+                        }
+
+                        else
+                            MessageBox.Show("Erro no cadastro!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Preencha todos os campos!", "Shar.Ed!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

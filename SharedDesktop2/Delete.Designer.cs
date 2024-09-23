@@ -81,6 +81,11 @@ namespace SharedDesktop2
             this.dataGridViewAdm = new Siticone.UI.WinForms.SiticoneDataGridView();
             this.NomeAdm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CargoAdm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.siticoneGroupBox1.SuspendLayout();
@@ -120,6 +125,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox1
             // 
+            this.siticoneGroupBox1.Controls.Add(this.label1);
             this.siticoneGroupBox1.Controls.Add(this.btnExcluirAluno);
             this.siticoneGroupBox1.Controls.Add(this.dataGridView1);
             this.siticoneGroupBox1.Controls.Add(this.txtExcluir);
@@ -260,6 +266,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox2
             // 
+            this.siticoneGroupBox2.Controls.Add(this.label2);
             this.siticoneGroupBox2.Controls.Add(this.dataGridViewMonitor);
             this.siticoneGroupBox2.Controls.Add(this.btnExcluirMonitor);
             this.siticoneGroupBox2.Controls.Add(this.txtExcluirMonitor);
@@ -374,6 +381,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox3
             // 
+            this.siticoneGroupBox3.Controls.Add(this.label3);
             this.siticoneGroupBox3.Controls.Add(this.dataGridViewProfessor);
             this.siticoneGroupBox3.Controls.Add(this.btnExcluirProfessor);
             this.siticoneGroupBox3.Controls.Add(this.txtExcluirProfessor);
@@ -486,6 +494,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox4
             // 
+            this.siticoneGroupBox4.Controls.Add(this.label4);
             this.siticoneGroupBox4.Controls.Add(this.dataGridViewDir);
             this.siticoneGroupBox4.Controls.Add(this.btnExcluirDir);
             this.siticoneGroupBox4.Controls.Add(this.txtExcluirDir);
@@ -597,6 +606,7 @@ namespace SharedDesktop2
             // 
             // siticoneGroupBox5
             // 
+            this.siticoneGroupBox5.Controls.Add(this.label5);
             this.siticoneGroupBox5.Controls.Add(this.dataGridViewAdm);
             this.siticoneGroupBox5.Controls.Add(this.btnExcluirAdm);
             this.siticoneGroupBox5.Controls.Add(this.txtExcluirAdm);
@@ -707,29 +717,59 @@ namespace SharedDesktop2
             this.CargoAdm.Name = "CargoAdm";
             this.CargoAdm.ReadOnly = true;
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // Delete
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Delete";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.siticoneGroupBox1.ResumeLayout(false);
+            this.siticoneGroupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.siticoneGroupBox2.ResumeLayout(false);
+            this.siticoneGroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMonitor)).EndInit();
             this.siticoneGroupBox3.ResumeLayout(false);
+            this.siticoneGroupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProfessor)).EndInit();
             this.siticoneGroupBox4.ResumeLayout(false);
+            this.siticoneGroupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDir)).EndInit();
             this.siticoneGroupBox5.ResumeLayout(false);
+            this.siticoneGroupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdm)).EndInit();
             this.ResumeLayout(false);
 
@@ -773,5 +813,10 @@ namespace SharedDesktop2
         private System.Windows.Forms.DataGridViewTextBoxColumn CargoAdm;
         private Siticone.UI.WinForms.SiticoneRoundedButton btnExcluirAdm;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox txtExcluirAdm;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
